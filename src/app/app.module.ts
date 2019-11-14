@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import {DictionaryService} from './services/dictionary.service';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { HomeComponent } from './home/home.component';
 import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
+import { LoginStep1Component } from './login-step1/login-step1.component';
+import { LoginStep2Component } from './login-step2/login-step2.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,15 @@ import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail
     DictionaryPageComponent,
     TimelinesComponent,
     HomeComponent,
-    DictionaryDetailComponent
+    DictionaryDetailComponent,
+    LoginStep1Component,
+    LoginStep2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DictionaryService],
   bootstrap: [AppComponent]

@@ -25,6 +25,7 @@ export class DictionaryService {
       return '';
     }
     const w = this.words.find(item => item.key === word.toLowerCase());
+
     if (w) {
       return w.meaning;
     }

@@ -1,0 +1,15 @@
+<div style="text-align: center">
+  <h1>Welcome to {{title}}</h1>
+</div>
+
+Translate:
+<app-dictionary></app-dictionary>
+<hr>
+<nav>
+  <a routerLink="/" class="link">Home</a>
+  <a routerLink="dictionary">Dictionary page</a>
+
+</nav>
+<br>
+<button class="link" (click)="goToTimelines()">Timeline</button>
+<router-outlet></router-outlet>
